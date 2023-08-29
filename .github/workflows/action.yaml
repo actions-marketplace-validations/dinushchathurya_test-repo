@@ -26,4 +26,4 @@ jobs:
         with:
           push: true
           platforms: linux/amd64
-          tags: test-helm-issue/eks-client:${{ steps.vars.outputs.sha_short }}
+          tags: limarktest/test-helm-issue:${{ steps.vars.outputs.sha_short }}
