@@ -6,10 +6,12 @@ branding:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-inputs:
-  # helm-version:
-  #   description: 'The Helm version to install'
-  #   required: true
   args:
-    description: Commands need to install and upgrade Helm chart
+    - ${{ inputs.helm-version }}
+    - ${{ inputs.args }}
+inputs:
+  helm-version:
+    required: true
+    default: '3.12.3'
+  args:
     required: true
