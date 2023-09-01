@@ -1,4 +1,4 @@
-name: 'Helm Installer'
+name: 'Helm Installer Test'
 description: 'GitHub Action to install Helm'
 branding:
   icon: 'download-cloud'
