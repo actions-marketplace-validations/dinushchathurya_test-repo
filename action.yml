@@ -7,9 +7,9 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
 inputs:
-  helm-version:
-    description: 'The Helm version to install'
-    required: true
+  # helm-version:
+  #   description: 'The Helm version to install'
+  #   required: true
   args:
     description: Commands need to install and upgrade Helm chart
     required: true
