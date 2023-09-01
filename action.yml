@@ -1,0 +1,15 @@
+name: 'Helm Installer'
+description: 'GitHub Action to install Helm'
+branding:
+  icon: 'download-cloud'
+  color: 'blue'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+inputs:
+  helm-version:
+    description: 'The Helm version to install'
+    required: true
+  args:
+    description: Commands need to install and upgrade Helm chart
+    required: true
